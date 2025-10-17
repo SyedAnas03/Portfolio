@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Syed Muhammad Anas — Full Stack Developer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Syed Muhammad Anas - Professional Full Stack Developer specializing in React, Node.js, and modern web technologies. Let's build something amazing together.">
+  <meta name="keywords" content="full stack developer, web developer, react, node.js, javascript, portfolio, pakistan developer">
+  <meta name="author" content="Syed Muhammad Anas">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Syed Muhammad Anas - Full Stack Developer">
+  <meta property="og:description" content="Professional Full Stack Developer specializing in modern web technologies">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://syedanas.com">
+  <meta property="og:image" content="images/og-image.jpg">
+  
+  <!-- Font & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Devicon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!-- Leaflet Maps CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Particle canvas -->
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+  <!-- Custom cursor -->
+  <div class="cursor" aria-hidden="true"></div>
+
+  <!-- Header / Navbar -->
+  <header>
+    <div class="nav-inner">
+      <div class="brand">
+        <span class="accent">Syed Muhammad</span> Anas
+      </div>
+      
+      <nav>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-right">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero fade-in">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1 class="name">Syed Muhammad Anas</h1>
+        <h3 class="subtitle">
+          <span id="typed-title">Full Stack Developer</span><span class="fake-cursor">|</span>
+        </h3>
+        <p class="lead">
+          I build modern, responsive web applications with cutting-edge technologies. 
+          Passionate about AI, Cyber Security, and creating digital experiences that make a difference.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn primary btn-hire" href="#contact">Hire Me</a>
+          <a class="btn outline" href="files/S_M_ANAS_CV.pdf" download>Download Resume</a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap">
+        <img src="images/profile.png" alt="Syed Muhammad Anas" class="profile-img" id="floatingProfile">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section fade-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate 3rd year BSCS student with expertise in full-stack web development. 
+        I specialize in building scalable, performant applications using modern technologies. 
+        When I'm not coding, I'm exploring AI advancements and cybersecurity trends.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section fade-section">
+    <div class="container">
+      <h2>Skills & Technologies</h2>
+      <p>Technologies I use to bring ideas to life:</p>
+      
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="devicon-html5-plain colored"></i>
+          <p class="skill-name">HTML5</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-css3-plain colored"></i>
+          <p class="skill-name">CSS3</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-javascript-plain colored"></i>
+          <p class="skill-name">JavaScript</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-react-original colored"></i>
+          <p class="skill-name">React</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-nodejs-plain colored"></i>
+          <p class="skill-name">Node.js</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-php-plain colored"></i>
+          <p class="skill-name">PHP</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-laravel-plain colored"></i>
+          <p class="skill-name">Laravel</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-angularjs-plain colored"></i>
+          <p class="skill-name">Angular</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-csharp-plain colored"></i>
+          <p class="skill-name">C#</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-dotnetcore-plain colored"></i>
+          <p class="skill-name">.NET Core</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-wordpress-plain colored"></i>
+          <p class="skill-name">WordPress</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-mysql-plain colored"></i>
+          <p class="skill-name">MySQL</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-git-plain colored"></i>
+          <p class="skill-name">Git</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-github-original"></i>
+          <p class="skill-name">GitHub</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-python-plain colored"></i>
+          <p class="skill-name">Python</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-typescript-plain colored"></i>
+          <p class="skill-name">TypeScript</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-mongodb-plain colored"></i>
+          <p class="skill-name">MongoDB</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-docker-plain colored"></i>
+          <p class="skill-name">Docker</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section fade-section">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-icon">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <h3>E-Commerce Platform</h3>
+          <p>Full-stack e-commerce solution with React, Node.js, and MongoDB featuring user authentication and payment integration.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">MongoDB</span>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-icon">
+            <i class="fas fa-tasks"></i>
+          </div>
+          <h3>Task Management App</h3>
+          <p>Responsive task manager with drag-drop functionality, real-time updates, and team collaboration features.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">Vue.js</span>
+            <span class="tech-tag">Express</span>
+            <span class="tech-tag">PostgreSQL</span>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-icon">
+            <i class="fas fa-cloud-sun"></i>
+          </div>
+          <h3>Weather Dashboard</h3>
+          <p>Interactive weather application with API integration, geolocation, and 7-day forecast visualization.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">API</span>
+            <span class="tech-tag">Chart.js</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="section section-alt fade-section">
+    <div class="container">
+      <h2>Latest Articles</h2>
+      <p>Insights and tutorials from my development journey</p>
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Why Clean Code Matters</h3>
+          <p>Principles & tips for maintainable code that scales with your team and project requirements.</p>
+          <a class="btn outline small" href="#">Read More <i class="fas fa-arrow-right"></i></a>
+        </article>
+        <article class="card">
+          <h3>Getting Started with React</h3>
+          <p>Small components & best practices for building scalable React applications from day one.</p>
+          <a class="btn outline small" href="#">Read More <i class="fas fa-arrow-right"></i></a>
+        </article>
+        <article class="card">
+          <h3>Mastering CSS Grid & Flexbox</h3>
+          <p>Complete guide to modern CSS layouts with practical examples and real-world use cases.</p>
+          <a class="btn outline small" href="#">Read More <i class="fas fa-arrow-right"></i></a>
+        </article>
+        <article class="card">
+          <h3>API Security Best Practices</h3>
+          <p>Essential security measures every developer should implement when building RESTful APIs.</p>
+          <a class="btn outline small" href="#">Read More <i class="fas fa-arrow-right"></i></a>
+        </article>
+        <article class="card">
+          <h3>Progressive Web Apps Guide</h3>
+          <p>Building fast, reliable web applications that work offline and feel like native apps.</p>
+          <a class="btn outline small" href="#">Read More <i class="fas fa-arrow-right"></i></a>
+        </article>
+        <article class="card">
+          <h3>Database Optimization Tips</h3>
+          <p>Performance tuning strategies for MySQL and MongoDB to handle large-scale applications.</p>
+          <a class="btn outline small" href="#">Read More <i class="fas fa-arrow-right"></i></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section section-alt fade-section">
+    <div class="container">
+      <h2>What People Say</h2>
+      <p>Feedback from clients and colleagues</p>
+      <div class="cards-grid">
+        <div class="testimonial card">
+          <div class="stars">★★★★★</div>
+          <p>"Anas is a fast learner and writes exceptionally clean, maintainable code. His attention to detail is impressive."</p>
+          <strong>— Senior Developer Mentor</strong>
+        </div>
+        <div class="testimonial card">
+          <div class="stars">★★★★★</div>
+          <p>"Always brings innovative ideas and works diligently on projects. A valuable team player with great communication skills."</p>
+          <strong>— Project Team Lead</strong>
+        </div>
+        <div class="testimonial card">
+          <div class="stars">★★★★★</div>
+          <p>"Outstanding problem-solving abilities. Anas consistently delivers high-quality solutions ahead of schedule."</p>
+          <strong>— University Professor</strong>
+        </div>
+        <div class="testimonial card">
+          <div class="stars">★★★★★</div>
+          <p>"His full-stack projects demonstrate deep understanding of both frontend and backend technologies. Very impressive portfolio."</p>
+          <strong>— Industry Expert</strong>
+        </div>
+        <div class="testimonial card">
+          <div class="stars">★★★★★</div>
+          <p>"Excellent at transforming complex requirements into elegant, user-friendly applications. Highly recommended!"</p>
+          <strong>— Client Review</strong>
+        </div>
+        <div class="testimonial card">
+          <div class="stars">★★★★★</div>
+          <p>"Great mentorship skills and always willing to help teammates. A positive influence in any development team."</p>
+          <strong>— Colleague</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- CONTACT -->
+<section id="contact" class="section fade-section">
+  <div class="container">
+    <h2>Let's Work Together</h2>
+    <p class="contact-subtitle">Have a project in mind? Let's discuss how we can bring your ideas to life.</p>
+    
+    <div class="contact-container">
+      <!-- Contact Info & Map -->
+      <div class="contact-sidebar">
+        <div class="contact-info">
+          <div class="contact-method">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email Me</h4>
+              <p>syedmanas94@gmail.com</p>
+              <span>Typically replies within 2 hours</span>
+            </div>
+          </div>
+          
+          <div class="contact-method">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Call Me</h4>
+              <p>+92 331 3616255</p>
+              <span>Mon-Fri from 9am to 6pm</span>
+            </div>
+          </div>
+          
+          <div class="contact-method">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>Karachi, Pakistan</p>
+              <span>Available for remote work worldwide</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map Container -->
+        <div class="map-container">
+          <div id="map" class="map"></div>
+          <div class="map-overlay">
+            <h4>Based in Karachi</h4>
+            <p>Working with clients worldwide</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROFESSIONAL PRODUCTION FORM -->
+<!-- Updated Form with Correct Field Names -->
+<form class="contact-form" id="emailjs-form">
+  <div class="form-group">
+    <label for="name">Full Name *</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+  
+  <div class="form-group">
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  
+  <div class="form-row">
+    <div class="form-group">
+      <label for="subject">Project Type</label>
+      <select id="subject" name="subject">
+        <option value="">Select a project type</option>
+        <option value="web-development">Web Development</option>
+        <option value="mobile-app">Mobile Application</option>
+        <option value="ecommerce">E-Commerce Solution</option>
+        <option value="consultation">Technical Consultation</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="budget">Project Budget (USD)</label>
+      <select id="budget" name="budget">
+        <option value="">Select budget range</option>
+        <option value="1k-5k">$1,000 - $5,000</option>
+        <option value="5k-10k">$5,000 - $10,000</option>
+        <option value="10k-25k">$10,000 - $25,000</option>
+        <option value="25k+">$25,000+</option>
+        <option value="not-sure">Not sure yet</option>
+      </select>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label for="message">Project Details *</label>
+    <textarea id="message" name="message" rows="6" placeholder="Tell me about your project, timeline, and specific requirements..." required></textarea>
+  </div>
+  
+  <div class="form-footer">
+    <button type="submit" class="btn primary">
+      Send Message
+    </button>
+    <p class="form-note">I'll get back to you within 24 hours</p>
+  </div>
+</form>
+
+    </div>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner fade-section">
+      <div class="footer-left">
+        <p>&copy; 2025 Syed Muhammad Anas. All rights reserved.</p>
+      </div>
+      <div class="footer-right social-links">
+        <a href="https://www.linkedin.com/in/syed-muhammad-anas-288259330/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/SyedAnas03" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/syedmanas_02/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/923313616255" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+ <!-- Load all scripts at the end of body -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/script.js"></script>
+
+<!-- EmailJS Script -->
+<script>
+  console.log('🚀 Starting EmailJS setup...');
+
+  function initializeEmailJS() {
+    console.log('📧 EmailJS object type:', typeof emailjs);
+    
+    if (typeof emailjs === 'undefined') {
+      console.error('❌ EmailJS SDK not loaded');
+      return false;
+    }
+
+    console.log('🔑 Initializing with key: g9gBsd7y3FASRelpw');
+    
+    try {
+      // Newer versions of EmailJS don't return a promise from init()
+      emailjs.init("g9gBsd7y3FASRelpw");
+      console.log('✅ EmailJS initialized successfully');
+      return true;
+    } catch (error) {
+      console.error('❌ EmailJS init failed:', error);
+      return false;
+    }
+  }
+
+  function setupForm() {
+    const form = document.getElementById('emailjs-form');
+    if (!form) {
+      console.error('❌ Form with ID "emailjs-form" not found');
+      return;
+    }
+
+    console.log('✅ Form found, setting up submit handler');
+    
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      console.log('📤 Form submitted, preparing to send email...');
+      
+      const btn = this.querySelector('button[type="submit"]');
+      const originalText = btn.innerHTML;
+      
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+      btn.disabled = true;
+
+      try {
+        console.log('🔄 Sending email via EmailJS...');
+        
+        const result = await emailjs.sendForm('service_5i2o9w2', 'template_7l6dltj', this);
+        
+        console.log('✅ Email sent successfully:', result);
+        alert('✅ Message sent successfully! I\'ll get back to you within 24 hours.');
+        form.reset();
+        
+      } catch (error) {
+        console.error('❌ Email send failed:', error);
+        
+        // More specific error messages
+        if (error.text) {
+          if (error.text.includes('public key')) {
+            alert('❌ Configuration error. Please check EmailJS setup.');
+          } else if (error.text.includes('recipients address')) {
+            alert('❌ Template configuration error. Please check EmailJS template settings.');
+          } else {
+            alert('❌ Failed to send message: ' + error.text);
+          }
+        } else {
+          alert('❌ Failed to send message. Please email me directly at: anassyedmuhammad7@gmail.com');
+        }
+      } finally {
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+      }
+    });
+    
+    console.log('✅ Form handler setup complete');
+  }
+
+  // Main initialization - simplified
+  setTimeout(() => {
+    const initialized = initializeEmailJS();
+    if (initialized) {
+      setupForm();
+    } else {
+      console.error('Failed to initialize EmailJS');
+    }
+  }, 1000);
+</script>
+
+</body>
+</html>
